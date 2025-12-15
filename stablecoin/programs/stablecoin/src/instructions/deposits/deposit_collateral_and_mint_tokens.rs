@@ -53,7 +53,7 @@ pub struct DepositCollateralAndMintTokens<'info> {
         associated_token::token_program = token_program
     )]
     pub token_account: InterfaceAccount<'info, TokenAccount>,
-    pub token_program: Interface<'info, TokenInterface>,
+    pub token_program: Interface<'info, TokenInterface>, //Program<'info, Token2022>,
     pub associated_token_program: Program<'info, AssociatedToken>,
     pub system_program: Program<'info, System>,
 }
