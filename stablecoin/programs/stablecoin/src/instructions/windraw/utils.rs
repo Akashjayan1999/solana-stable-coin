@@ -3,8 +3,8 @@ use anchor_lang::prelude::*;
 use anchor_lang::system_program::{transfer, Transfer};
 use anchor_spl::token_interface::TokenInterface;
 use anchor_spl::{
-    token_2022::{burn, Burn},
-    token_interface::{Mint, Token2022, TokenAccount},
+   // token_2022::{burn, Burn},
+    token_interface::{Mint, Token2022, TokenAccount,burn, Burn},
 };
 
 pub fn withdraw_sol_internal<'info>(
