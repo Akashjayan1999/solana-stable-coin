@@ -20,7 +20,7 @@ pub struct DepositCollateralAndMintTokens<'info> {
         bump = config_account.bump,
         has_one = mint_account
     )]
-    pub config_account: Box<Account<'info, Config>>,
+    pub config_account: Account<'info, Config>,
     #[account(
         init_if_needed,
         payer = depositor,
